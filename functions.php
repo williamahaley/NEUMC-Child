@@ -29,4 +29,4 @@ function bethlehem_enqueue_cf7() {
 add_action( 'wp_head', 'bethlehem_enqueue_cf7' );
 
 // Do not load Child Theme Style.css
-add_filter( 'bethlehem_load_child_style', '__return_false' );
+#add_filter( 'bethlehem_load_child_style', '__return_false' );

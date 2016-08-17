@@ -10,3 +10,19 @@ Text Domain:  	bethlehem
 Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
 */
 
+.top-nav-links { float: right; }
+.top-nav-links .sermons-link{ display: none; }
+.top-nav-links .donations-link{ display: none; }
+
+@media (max-width: 600px) {
+
+    .header-7 .header-top-nav-menu { margin-top: 5px; }
+
+    .site-content{padding-top: 0;}
+    .top-nav-links { float: none; }
+    .vc_single_image-wrapper img{margin-top: 0;}
+
+    footer.site-footer{ padding: 20px 0 30px; }
+    footer.site-footer .wrap .footer-widget:after { font-size: 12px; }
+
+}
