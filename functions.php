@@ -28,5 +28,14 @@ function bethlehem_enqueue_cf7() {
 
 add_action( 'wp_head', 'bethlehem_enqueue_cf7' );
 
-// Do not load Child Theme Style.css
-#add_filter( 'bethlehem_load_child_style', '__return_false' );
+if ( ! function_exists( 'neumc_password_form' ) ){
+
+	function neumc_password_form( $output ){
+
+		return str_replace('below:', 'below:<br/>Contact church office at <a href="mailto:office@neumc.com">office@neumc.com</a> for password.', $output );
+
+	}
+
+}
+
+add_filter( 'the_password_form', 'neumc_password_form' );
